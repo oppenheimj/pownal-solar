@@ -2,13 +2,15 @@
 <html>
   <head>
     <title>Pownal Solar</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
-    <h1>Pownal Solar</h1>
-    <button onclick="toggleRelay(1)">Kitchen East</button><br>
-    <button onclick="toggleRelay(2)">Kitchen Island</button><br>
-    <button onclick="toggleRelay(3)">South Floods</button><br>
-    <button onclick="toggleRelay(4)">North Flood</button>
+    <div class="btn-group">
+      <button class="button" onclick="toggleRelay(1)">Kitchen East</button>
+      <button class="button" onclick="toggleRelay(2)">Kitchen Island</button>
+      <button class="button" onclick="toggleRelay(3)">South Floods</button>
+      <button class="button" onclick="toggleRelay(4)">North Flood</button>
+    </div>
   </body>
 
   <script>

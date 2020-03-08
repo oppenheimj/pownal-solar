@@ -1,0 +1,19 @@
+.btn-group .button {
+  background-color: #00ffff;
+  border: 5px solid black;
+  padding: 15px 32px;
+  width: 500px;
+  font-size: 28px;
+  display: block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #5f0096;
+  color: white;
+}
