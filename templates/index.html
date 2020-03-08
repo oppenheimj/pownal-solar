@@ -1,0 +1,23 @@
+<!-- templates/index.html -->
+<html>
+  <head>
+    <title>Pownal Solar</title>
+  </head>
+  <body>
+    <h1>Pownal Solar</h1>
+    <button onclick="toggleRelay(1)">Kitchen East</button>
+    <button onclick="toggleRelay(2)">Kitchen Island</button>
+    <button onclick="toggleRelay(3)">South Floods</button>
+    <button onclick="toggleRelay(4)">North Flood</button>
+  </body>
+
+  <script>
+    function toggleRelay(relayNum) {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("POST", `http://localhost:5000/pownal-solar?relayNum=${relayNum}`)
+      xmlHttp.send()
+    }
+  </script>
+
+</html>
+
