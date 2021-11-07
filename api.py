@@ -14,6 +14,7 @@ def home():
 @app.route('/pownal-solar', methods=['POST'])
 def toggleRelay():
     relayNum = request.args.get('relayNum')
+    print(f'Received POST for relay number {relayNum}')
     common.toggleRelay(int(relayNum))
     return ''
 
