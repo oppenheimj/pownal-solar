@@ -16,7 +16,7 @@
   <script>
     function toggleRelay(relayNum) {
       var xmlHttp = new XMLHttpRequest();
-      xmlHttp.open("POST", `http://10.0.0.7:5000/pownal-solar?relayNum=${relayNum}`)
+      xmlHttp.open("POST", `http://10.0.0.102:5000/pownal-solar?relayNum=${relayNum}`)
       xmlHttp.send()
     }
   </script>
